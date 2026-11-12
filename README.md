@@ -15,14 +15,15 @@ Incluye los últimos cambios publicados, con Cataluña y doce comunidades de Men
 
 ## Publicar con Cloudflare Workers
 
-1. Instalar las dependencias con `npm install` e iniciar sesión con `npx wrangler login`.
-2. Crear la base de datos con `npx wrangler d1 create divergencia-contadores`.
-3. Copiar `wrangler.example.json` a `wrangler.json` y sustituir el identificador de la base de datos por el obtenido en el paso anterior. No utilizar el texto de ejemplo como identificador real.
-4. Ejecutar `npm run db:migrate` y `npm run deploy`.
-5. Conectar este repositorio desde Cloudflare Workers Builds para las actualizaciones.
-6. Añadir divergencia.org al alojamiento y configurar en DonDominio los registros o servidores DNS que indique Cloudflare. Revisar antes si el dominio ya tiene correo u otros servicios. No transferir el registro del dominio para este paso.
+La web está desplegada en https://divergencia.divergencia.workers.dev.
 
-La configuración real `wrangler.json` se mantiene fuera de Git por defecto; antes de activar las publicaciones automáticas debe configurarse el identificador real de la base de datos en el entorno de publicación.
+1. Instalar las dependencias con `pnpm install --frozen-lockfile` e iniciar sesión con `pnpm exec wrangler login`.
+2. La base de datos `divergencia-contadores` ya está creada y vinculada en `wrangler.json`. Su identificador es configuración pública, no una credencial.
+3. Ejecutar `pnpm db:migrate` si hay nuevas migraciones y `pnpm deploy` para publicar.
+4. Conectar este repositorio desde Cloudflare Workers Builds para las actualizaciones automáticas.
+5. Añadir divergencia.org al alojamiento y configurar en DonDominio los registros o servidores DNS que indique Cloudflare. Revisar antes si el dominio ya tiene correo u otros servicios. No transferir el registro del dominio para este paso.
+
+Las credenciales de publicación se guardan fuera del repositorio.
 
 La migración `0001_initial_counts.sql` conserva una instantánea de los contadores del 12 de noviembre de 2026. Antes del cambio definitivo conviene renovar esta instantánea para incluir las visitas más recientes.
 

@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "divergencia",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-12",
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "divergencia-contadores",
+      "database_id": "be144668-c012-4a73-869e-9c797f8a9d36",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "account_id": "9035533d75ccc8ede9dfb0f4850bfa90",
+  "workers_dev": true
+}
