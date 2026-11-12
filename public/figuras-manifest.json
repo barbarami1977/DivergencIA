@@ -1,0 +1,297 @@
+[
+  {
+    "id": 0,
+    "title": "Mesa · mano derecha",
+    "file": "mesa-mano-derecha.png"
+  },
+  {
+    "id": 1,
+    "title": "Mesa · mano izquierda",
+    "file": "mesa-mano-izquierda.png"
+  },
+  {
+    "id": 3,
+    "title": "Cascabeles · brazo derecho · 8 tiempos",
+    "file": "cascabeles-brazo-derecho-8-tiempos.png"
+  },
+  {
+    "id": 4,
+    "title": "Cascabeles · brazo izquierdo · 8 tiempos",
+    "file": "cascabeles-brazo-izquierdo-8-tiempos.png"
+  },
+  {
+    "id": 5,
+    "title": "Cascabeles · brazo derecho",
+    "file": "cascabeles-brazo-derecho.png"
+  },
+  {
+    "id": 6,
+    "title": "Cascabeles · brazo izquierdo",
+    "file": "cascabeles-brazo-izquierdo.png"
+  },
+  {
+    "id": 7,
+    "title": "Cascabeles · brazo derecho · 8 tiempos · con flecha",
+    "file": "cascabeles-brazo-derecho-8-tiempos-con-flecha.png"
+  },
+  {
+    "id": 8,
+    "title": "Cascabeles · brazo izquierdo · 8 tiempos · con flecha",
+    "file": "cascabeles-brazo-izquierdo-8-tiempos-con-flecha.png"
+  },
+  {
+    "id": 9,
+    "title": "Cascabeles · ambos brazos",
+    "file": "cascabeles-ambos-brazos.png"
+  },
+  {
+    "id": 13,
+    "title": "Puño mesa · aro verde · fondo blanco",
+    "file": "puno-mesa-aro-verde-fondo-blanco.png"
+  },
+  {
+    "id": 14,
+    "title": "Puño mesa · aro negro · fondo blanco",
+    "file": "puno-mesa-aro-negro-fondo-blanco.png"
+  },
+  {
+    "id": 18,
+    "title": "Pies · aro negro",
+    "file": "pies-aro-negro.png"
+  },
+  {
+    "id": 19,
+    "title": "Pies · aro amarillo",
+    "file": "pies-aro-amarillo.png"
+  },
+  {
+    "id": 20,
+    "title": "Chasquidos dobles · piel clara · aro negro",
+    "file": "chasquidos-dobles-piel-clara-aro-negro.png"
+  },
+  {
+    "id": 21,
+    "title": "Chasquidos dobles · piel clara · aro azul",
+    "file": "chasquidos-dobles-piel-clara-aro-azul.png"
+  },
+  {
+    "id": 22,
+    "title": "Chasquidos dobles · piel oscura · aro azul",
+    "file": "chasquidos-dobles-piel-oscura-aro-azul.png"
+  },
+  {
+    "id": 23,
+    "title": "Chasquidos dobles · piel oscura · aro negro",
+    "file": "chasquidos-dobles-piel-oscura-aro-negro.png"
+  },
+  {
+    "id": 24,
+    "title": "Pecho · mano derecha · aro naranja",
+    "file": "pecho-mano-derecha-aro-naranja.png"
+  },
+  {
+    "id": 25,
+    "title": "Mesa con ambas manos · piel media · aro violeta",
+    "file": "mesa-con-ambas-manos-piel-media-aro-violeta.png"
+  },
+  {
+    "id": 26,
+    "title": "Pecho con ambas manos · piel oscura · aro negro",
+    "file": "pecho-con-ambas-manos-piel-oscura-aro-negro.png"
+  },
+  {
+    "id": 27,
+    "title": "Pecho con ambas manos · piel oscura · aro rojo",
+    "file": "pecho-con-ambas-manos-piel-oscura-aro-rojo.png"
+  },
+  {
+    "id": 28,
+    "title": "Pecho con ambas manos · piel clara · aro negro",
+    "file": "pecho-con-ambas-manos-piel-clara-aro-negro.png"
+  },
+  {
+    "id": 29,
+    "title": "Pecho con ambas manos · piel clara · aro rojo",
+    "file": "pecho-con-ambas-manos-piel-clara-aro-rojo.png"
+  },
+  {
+    "id": 30,
+    "title": "Rodilla · mano izquierda · piel clara · aro negro",
+    "file": "rodilla-mano-izquierda-piel-clara-aro-negro.png"
+  },
+  {
+    "id": 31,
+    "title": "Rodilla · mano izquierda · piel clara · aro violeta",
+    "file": "rodilla-mano-izquierda-piel-clara-aro-violeta.png"
+  },
+  {
+    "id": 32,
+    "title": "Rodilla · mano derecha · piel clara · aro negro",
+    "file": "rodilla-mano-derecha-piel-clara-aro-negro.png"
+  },
+  {
+    "id": 33,
+    "title": "Rodilla · mano derecha · piel clara · aro violeta",
+    "file": "rodilla-mano-derecha-piel-clara-aro-violeta.png"
+  },
+  {
+    "id": 34,
+    "title": "Rodilla · mano izquierda · piel oscura · aro negro",
+    "file": "rodilla-mano-izquierda-piel-oscura-aro-negro.png"
+  },
+  {
+    "id": 35,
+    "title": "Rodilla · mano izquierda · piel oscura · aro violeta",
+    "file": "rodilla-mano-izquierda-piel-oscura-aro-violeta.png"
+  },
+  {
+    "id": 36,
+    "title": "Rodilla · mano derecha · piel oscura · aro negro",
+    "file": "rodilla-mano-derecha-piel-oscura-aro-negro.png"
+  },
+  {
+    "id": 37,
+    "title": "Rodilla · mano derecha · piel oscura · aro violeta",
+    "file": "rodilla-mano-derecha-piel-oscura-aro-violeta.png"
+  },
+  {
+    "id": 38,
+    "title": "Rodilla · mano izquierda · piel media · aro negro",
+    "file": "rodilla-mano-izquierda-piel-media-aro-negro.png"
+  },
+  {
+    "id": 39,
+    "title": "Rodilla · mano izquierda · piel media · aro violeta",
+    "file": "rodilla-mano-izquierda-piel-media-aro-violeta.png"
+  },
+  {
+    "id": 40,
+    "title": "Rodilla · mano derecha · piel media · aro negro",
+    "file": "rodilla-mano-derecha-piel-media-aro-negro.png"
+  },
+  {
+    "id": 41,
+    "title": "Rodilla · mano derecha · piel media · aro violeta",
+    "file": "rodilla-mano-derecha-piel-media-aro-violeta.png"
+  },
+  {
+    "id": 42,
+    "title": "Rodillas con ambas manos · piel clara · aro violeta",
+    "file": "rodillas-con-ambas-manos-piel-clara-aro-violeta.png"
+  },
+  {
+    "id": 43,
+    "title": "Rodillas con ambas manos · piel clara · aro negro",
+    "file": "rodillas-con-ambas-manos-piel-clara-aro-negro.png"
+  },
+  {
+    "id": 44,
+    "title": "Rodillas con ambas manos · piel oscura · aro negro",
+    "file": "rodillas-con-ambas-manos-piel-oscura-aro-negro.png"
+  },
+  {
+    "id": 45,
+    "title": "Rodillas con ambas manos · piel oscura · aro violeta",
+    "file": "rodillas-con-ambas-manos-piel-oscura-aro-violeta.png"
+  },
+  {
+    "id": 46,
+    "title": "Rodillas con ambas manos · piel media · aro violeta",
+    "file": "rodillas-con-ambas-manos-piel-media-aro-violeta.png"
+  },
+  {
+    "id": 47,
+    "title": "Rodillas con ambas manos · piel media · aro negro",
+    "file": "rodillas-con-ambas-manos-piel-media-aro-negro.png"
+  },
+  {
+    "id": 48,
+    "title": "Mesa con ambas manos · piel clara · aro violeta",
+    "file": "mesa-con-ambas-manos-piel-clara-aro-violeta.png"
+  },
+  {
+    "id": 49,
+    "title": "Mesa con ambas manos · piel oscura · aro violeta",
+    "file": "mesa-con-ambas-manos-piel-oscura-aro-violeta.png"
+  },
+  {
+    "id": 50,
+    "title": "Mesa con ambas manos · piel media · aro negro",
+    "file": "mesa-con-ambas-manos-piel-media-aro-negro.png"
+  },
+  {
+    "id": 51,
+    "title": "Mesa con ambas manos · piel clara · aro negro",
+    "file": "mesa-con-ambas-manos-piel-clara-aro-negro.png"
+  },
+  {
+    "id": 52,
+    "title": "Mesa con ambas manos · piel oscura · aro negro",
+    "file": "mesa-con-ambas-manos-piel-oscura-aro-negro.png"
+  },
+  {
+    "id": 53,
+    "title": "Pecho · mano izquierda · aro naranja",
+    "file": "pecho-mano-izquierda-aro-naranja.png"
+  },
+  {
+    "id": 54,
+    "title": "Pecho · mano izquierda · aro negro",
+    "file": "pecho-mano-izquierda-aro-negro.png"
+  },
+  {
+    "id": 55,
+    "title": "Pecho · mano derecha · aro negro",
+    "file": "pecho-mano-derecha-aro-negro.png"
+  },
+  {
+    "id": 56,
+    "title": "Chasquidos · piel clara · aro azul",
+    "file": "chasquidos-piel-clara-aro-azul.png"
+  },
+  {
+    "id": 57,
+    "title": "Chasquidos · piel clara · aro negro",
+    "file": "chasquidos-piel-clara-aro-negro.png"
+  },
+  {
+    "id": 58,
+    "title": "Chasquidos · piel oscura · aro azul",
+    "file": "chasquidos-piel-oscura-aro-azul.png"
+  },
+  {
+    "id": 59,
+    "title": "Chasquidos · piel oscura · aro negro",
+    "file": "chasquidos-piel-oscura-aro-negro.png"
+  },
+  {
+    "id": 60,
+    "title": "Palmada · piel oscura · aro negro",
+    "file": "palmada-piel-oscura-aro-negro.png"
+  },
+  {
+    "id": 61,
+    "title": "Palmada · piel oscura · aro verde",
+    "file": "palmada-piel-oscura-aro-verde.png"
+  },
+  {
+    "id": 62,
+    "title": "Palmada · piel media · aro verde",
+    "file": "palmada-piel-media-aro-verde.png"
+  },
+  {
+    "id": 63,
+    "title": "Palmada · piel media · aro negro",
+    "file": "palmada-piel-media-aro-negro.png"
+  },
+  {
+    "id": 64,
+    "title": "Palmada · piel clara · aro verde",
+    "file": "palmada-piel-clara-aro-verde.png"
+  },
+  {
+    "id": 65,
+    "title": "Palmada · piel clara · aro negro",
+    "file": "palmada-piel-clara-aro-negro.png"
+  }
+]

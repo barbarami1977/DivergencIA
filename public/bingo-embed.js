@@ -1,0 +1,1 @@
+const bingoPanel=document.querySelector('.bingo-embed');bingoPanel.addEventListener('toggle',()=>{const frame=bingoPanel.querySelector('iframe');if(bingoPanel.open&&!frame.hasAttribute('src'))frame.src=frame.dataset.src;});

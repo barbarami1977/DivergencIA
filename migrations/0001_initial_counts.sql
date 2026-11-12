@@ -1,0 +1,23 @@
+-- Instantánea de contadores del 12 de noviembre de 2026.
+INSERT INTO public_counts(resource, action, total) VALUES ('https://view.genially.com/5e90da3db5f8e60d8ffbc7b7', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('https://view.genially.com/60983576f72e040d45edcea2', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('https://view.genially.com/609d7dc5554ae80d99282ee2', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/carne-escritor.pdf', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/checklist-escritura.pdf', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/compases.pdf', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/corcheas.pdf', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/cosas.pdf', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/dianas.pdf', 'open', 2) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/llavero.pdf', 'open', 2) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/memory.pdf', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/musidosier.pdf', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/pegamento.pdf', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/ritmos-halloween.pdf', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/tapete.pdf', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/ticket-autoevaluacion.pdf', 'open', 2) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/ticket-ciberpunk.pdf', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/ticket-reflexivo.pdf', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/ticket-salida-1.pdf', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/ticket-vintage.pdf', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('pdfs/tickets-semaforo.pdf', 'open', 1) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
+INSERT INTO public_counts(resource, action, total) VALUES ('site', 'visit', 336) ON CONFLICT(resource, action) DO UPDATE SET total = MAX(public_counts.total, excluded.total);
