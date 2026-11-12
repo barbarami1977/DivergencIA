@@ -17,5 +17,15 @@
     }
   ],
   "account_id": "9035533d75ccc8ede9dfb0f4850bfa90",
-  "workers_dev": true
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "divergencia.org/*",
+      "zone_name": "divergencia.org"
+    },
+    {
+      "pattern": "www.divergencia.org/*",
+      "zone_name": "divergencia.org"
+    }
+  ]
 }
