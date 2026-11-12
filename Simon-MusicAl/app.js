@@ -1,0 +1,46 @@
+const $=s=>document.querySelector(s),pads=[...document.querySelectorAll('.note')];
+const notes=[{file:'C4',rate:1},{file:'Ds4',rate:2**(-1/12)},{file:'Ds4',rate:2**(1/12)},{file:'Fs4',rate:2**(1/12)},{file:'A4',rate:1}];
+const sequenceGaps={slow:900,normal:600,fast:440};
+const frequencies=[261.626,293.665,329.628,391.995,440];
+function instrumentChoice(value){return ['marimba','flute'].includes(value)?value:'piano'}
+function synthesizedNote(i,duration,instrument){
+  const now=ctx.currentTime;
+  const partials=instrument==='marimba'?[[1,.75],[4,.18],[9.2,.06]]:[[1,.78],[2,.17],[3,.05]];
+  for(const [multiple,level] of partials){
+    const oscillator=ctx.createOscillator();
+    const gain=ctx.createGain();
+    oscillator.frequency.value=frequencies[i]*multiple;
+    gain.gain.setValueAtTime(0,now);
+    gain.gain.linearRampToValueAtTime(volume*level*.55,now+(instrument==='flute'?.035:.006));
+    gain.gain.linearRampToValueAtTime(0,now+duration);
+    oscillator.connect(gain).connect(ctx.destination);
+    oscillator.start(now);
+    oscillator.stop(now+duration);
+    voices.push(oscillator);
+    oscillator.onended=()=>{
+      voices=voices.filter(voice=>voice!==oscillator);
+      gain.disconnect();
+    };
+  }
+}
+let ctx,loading,buffers={},voices=[],seq=[],position=0,phase='idle',mode='lights',run=0,volume=.7,best={lights:0,ear:0};
+try{const saved=JSON.parse(localStorage.getItem('simon-musical-best'));for(const k of ['lights','ear'])best[k]=Math.max(0,Math.min(10000,Number(saved?.[k])||0))}catch{}
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+function message(label,title,detail){$('#phase').textContent=label;$('#message').textContent=title;$('#detail').textContent=detail}
+function render(){document.body.dataset.phase=phase;$('#round').textContent=seq.length||'—';$('#best').textContent=best[mode];pads.forEach(b=>b.disabled=!['idle','input'].includes(phase));$('#replay').disabled=phase!=='input';$('#pause').disabled=!['listen','input','success','paused'].includes(phase);$('#pause').textContent=phase==='paused'?'Continuar':'Pausar';$('#start').hidden=!['idle','missed'].includes(phase);$('#start').textContent=phase==='missed'?'Volver a intentarlo ↗':'Empezar a jugar ↗';$('#restart').hidden=phase==='idle';$('#instrument').disabled=$('#speed').disabled=!['idle','missed'].includes(phase);$('#lights').disabled=$('#ear').disabled=!['idle','missed'].includes(phase);$('#progress').innerHTML=seq.map((_,i)=>`<i class="${phase==='input'&&i<position?'done':''}"></i>`).join('')}
+function stop(){voices.forEach(v=>{try{v.stop()}catch{}});voices=[];pads.forEach(b=>b.classList.remove('lit'))}
+async function prepare(instrument=instrumentChoice($('#instrument').value)){ctx??=new(window.AudioContext||window.webkitAudioContext)();await ctx.resume();if(instrument!=='piano')return;if(!loading)loading=Promise.all([...new Set(notes.map(n=>n.file))].map(async file=>{const r=await fetch('audio/'+file+'.mp3');if(!r.ok)throw Error('audio');buffers[file]=await ctx.decodeAudioData(await r.arrayBuffer())})).catch(e=>{loading=null;throw e});await loading}
+function sound(i,duration=.40,instrument=instrumentChoice($('#instrument').value)){if(instrument!=='piano'){synthesizedNote(i,duration,instrument);return;}const n=notes[i],src=ctx.createBufferSource(),gain=ctx.createGain();src.buffer=buffers[n.file];src.playbackRate.value=n.rate;gain.gain.setValueAtTime(volume,ctx.currentTime);gain.gain.setValueAtTime(volume,ctx.currentTime+duration-.1);gain.gain.linearRampToValueAtTime(0,ctx.currentTime+duration);src.connect(gain);gain.connect(ctx.destination);src.start();src.stop(ctx.currentTime+duration);voices.push(src);src.onended=()=>{voices=voices.filter(x=>x!==src);gain.disconnect()}}
+function flash(i,duration){pads[i].classList.add('lit');setTimeout(()=>pads[i].classList.remove('lit'),duration)}
+function failAudio(){phase='idle';seq=[];stop();$('#audioError').textContent='No se ha podido cargar el sonido. Comprueba la conexión y pulsa Empezar otra vez.';message('VOLVEMOS A PROBAR','El sonido aún no está listo.','Si usas iPhone, desactiva el modo silencio y sube el volumen.');render()}
+async function playSequence(){const token=++run;stop();phase='listen';position=0;message('ESCUCHA CON ATENCIÓN','Ahora suena la melodía.',mode==='ear'?'Solo tus oídos: los botones no se iluminarán.':'Mira y escucha. Después será tu turno.');render();await wait(300);if(token!==run)return;const gap=sequenceGaps[$('#speed').value],duration=gap*.72;for(const n of seq){if(token!==run)return;sound(n,duration/1000);if(mode==='lights')flash(n,duration);await wait(gap)}if(token!==run)return;phase='input';message('TU TURNO','¡Hazla sonar otra vez!',`Repite ${seq.length===1?'la nota':'las notas'} en el mismo orden. Sin prisa.`);render()}
+async function begin(){if(!['idle','missed'].includes(phase))return;const retry=phase==='missed',token=++run;phase='loading';$('#audioError').textContent='';message('PREPARAMOS EL SONIDO','Un momento…','Cargando los cinco sonidos.');render();try{await prepare();if(token!==run)return;if(!retry)seq=[Math.floor(Math.random()*5)];playSequence()}catch{if(token===run)failAudio()}}
+async function press(i){if(!['idle','input'].includes(phase))return;if(phase==='idle'){try{const instrument=instrumentChoice($('#instrument').value);await prepare(instrument);if(phase!=='idle'||instrument!==$('#instrument').value)return;sound(i,.4,instrument);flash(i,350)}catch{failAudio()}return}sound(i);flash(i,350);if(seq[position]!==i){++run;phase='missed';message('LO INTENTAMOS OTRA VEZ','Una nota se nos ha escapado.',`Has completado ${seq.length-1} ${seq.length-1===1?'ronda':'rondas'}. Puedes repetir esta melodía.`);render();return}position++;if(position<seq.length){render();return}phase='success';best[mode]=Math.max(best[mode],seq.length);try{localStorage.setItem('simon-musical-best',JSON.stringify(best))}catch{}message('¡SECUENCIA CONSEGUIDA!','¡Qué buen oído!','Añadimos una nota más…');render();const token=++run;await wait(700);if(token!==run)return;seq.push(Math.floor(Math.random()*5));playSequence()}
+function reset(){++run;stop();seq=[];position=0;phase='idle';$('#audioError').textContent='';message('DESCUBRE LOS CINCO SONIDOS','Todo empieza por escuchar.','Prueba los botones y, cuando quieras, empezamos.');render()}
+$('#start').onclick=begin;$('#restart').onclick=reset;$('#replay').onclick=()=>{if(phase==='input')playSequence()};$('#pause').onclick=async()=>{if(phase==='paused'){try{await ctx.resume();playSequence()}catch{failAudio()}return}if(!['listen','input','success'].includes(phase))return;++run;stop();phase='paused';message('UN PEQUEÑO RESPIRO','La música te espera.','Al continuar volverás a escuchar la secuencia completa.');render()};
+for(const k of ['lights','ear'])$('#'+k).onclick=()=>{if(!['idle','missed'].includes(phase))return;mode=k;$('#lights').setAttribute('aria-pressed',String(k==='lights'));$('#ear').setAttribute('aria-pressed',String(k==='ear'));reset()};pads.forEach((b,i)=>b.onclick=()=>press(i));document.addEventListener('keydown',e=>{if($('#dialog').open||e.repeat||e.ctrlKey||e.metaKey||e.altKey||['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName))return;if(/^[1-5]$/.test(e.key)){e.preventDefault();press(Number(e.key)-1)}});$('#volume').oninput=e=>volume=Number(e.target.value)/100;
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&['listen','input','success'].includes(phase))$('#pause').click()});
+function dialog(content){if(['listen','input','success'].includes(phase))$('#pause').click();$('#dialogBody').innerHTML=content;$('#dialog').showModal()}
+$('#help').onclick=()=>dialog('<p class="eyebrow">CINCO SONIDOS PARA RECORDAR</p><h2>Un oído atento.<br>Una nota más.</h2><ol><li>Prueba los cinco sonidos antes de empezar.</li><li>Escucha la secuencia hasta el final.</li><li>Cuando aparezca «Tu turno», repítela pulsando las notas en el mismo orden.</li><li>Cada acierto añade una nota. Si te equivocas, puedes repetir la misma ronda.</li></ol><p><strong>Con luces:</strong> los botones acompañan al sonido. <strong>Solo oído:</strong> la secuencia no tiene pistas visuales.</p><p>Puedes usar las teclas 1, 2, 3, 4 y 5. «Escuchar otra vez» repite la secuencia sin penalización. Los récords de cada modo se guardan en este navegador.</p><p>Para jugar en grupo, escuchad y cantad la secuencia antes de responder. En iPhone, desactiva el modo silencio si no oyes el piano.</p>');$('#credits').onclick=()=>dialog('<p class="eyebrow">SONIDOS Y CRÉDITOS</p><h2>Sonidos del juego</h2><p>Los timbres de marimba y flauta son sintetizados.</p><p>Grabaciones del piano Yamaha C5 de <strong>Salamander Grand Piano</strong>, de Alexander Holm, distribuidas por Tone.js bajo <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener">CC BY 3.0</a>.</p><p>Se usan cuatro grabaciones de piano; tres de los sonidos se ajustan un semitono a partir de una muestra vecina. Se aplica una envolvente corta de volumen.</p><p><a href="https://github.com/Tonejs/audio/tree/master/salamander" target="_blank" rel="noopener">Colección y licencia originales ↗</a></p><p>Diseño y juego para el aula creativa de DivergencIA.</p>');$('#closeDialog').onclick=()=>$('#dialog').close();render();
+
+$('#instrument').onchange=()=>{stop();if(phase==='missed')reset();};
