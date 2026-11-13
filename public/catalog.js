@@ -1,5 +1,31 @@
 const resources=[
 {
+  "title": "Intensidad musical · Forte y piano",
+  "type": "interactive",
+  "cycle": "0",
+  "description": "Ejercicios rítmicos con imágenes de palmas de distintos tamaños para interpretar los contrastes de intensidad forte y piano.",
+  "url": "https://view.genially.com/608f0c2fd673050d1588675c",
+  "source": "Genially",
+  "preview": "previews/intensidad-musical.png",
+  "pages": 6,
+  "areas": [
+    "musica"
+  ]
+},
+{
+  "title": "Ritmos miau · Manipulativo virtual",
+  "type": "interactive",
+  "cycle": "0",
+  "description": "Combina y arrastra figuras musicales con forma de gato y silencios para construir ritmos en compás de 2/4.",
+  "url": "https://view.genially.com/603bfe2ba6c8ee0d26fa225e",
+  "source": "Genially",
+  "preview": "previews/ritmos-miau.png",
+  "pages": 6,
+  "areas": [
+    "musica"
+  ]
+},
+{
   "title": "Elige la opción correcta · Figuras y silencios",
   "type": "game",
   "cycle": "0",
