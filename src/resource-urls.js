@@ -1,4 +1,5 @@
 export default {
+"https://view.genially.com/61fab489ebaedb0014cc45b6": false,
 "https://view.genially.com/60539f3a2b26120d800de240": false,
 "https://view.genially.com/6054badd5d00340dad3ec587": false,
 "https://view.genially.com/6084414fbaf8e60d0a2201f3": false,

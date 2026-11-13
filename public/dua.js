@@ -23,6 +23,7 @@ const duaConsiderations={
 '9.3':['engagement','Compromiso','9 · Autorregulación','Promover la reflexión individual y colectiva']
 };
 const duaMaterialTags={
+"https://view.genially.com/61fab489ebaedb0014cc45b6":[["2.2", "Relaciona la representación visual de figuras y silencios musicales con sus nombres mediante preguntas de elección."], ["7.3", "La identificación de figuras y silencios se practica mediante un juego interactivo de preguntas."]],
 "https://view.genially.com/60539f3a2b26120d800de240":[["2.2", "Las figuras y los silencios se apoyan en piezas visuales y vagones para comprender y practicar la notación rítmica."], ["3.2", "Los vagones hacen visible la agrupación de dos pulsos en cada compás."], ["5.2", "Las piezas virtuales permiten construir y reorganizar secuencias rítmicas en los vagones."]],
 "https://view.genially.com/6054badd5d00340dad3ec587":[["2.2", "Las figuras y los silencios se apoyan en piezas visuales y vagones para comprender y practicar la notación rítmica."], ["3.2", "La distribución de los vagones hace visibles las agrupaciones de dos y tres pulsos."], ["5.2", "Las piezas virtuales permiten construir y reorganizar secuencias rítmicas en los vagones."]],
 "https://view.genially.com/6084414fbaf8e60d0a2201f3":[["2.2","Las imágenes de sol, luna y silencio sirven como código de apoyo para iniciarse en la lectura e interpretación rítmica."]],

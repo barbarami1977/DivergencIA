@@ -1,5 +1,18 @@
 const resources=[
 {
+  "title": "Elige la opción correcta · Figuras y silencios",
+  "type": "game",
+  "cycle": "0",
+  "description": "Juego de elección entre dos opciones para reconocer figuras y silencios musicales y relacionarlos con sus nombres.",
+  "url": "https://view.genially.com/61fab489ebaedb0014cc45b6",
+  "source": "Genially",
+  "preview": "previews/elige-opcion-correcta.png",
+  "pages": 13,
+  "areas": [
+    "musica"
+  ]
+},
+{
   "title": "Tren musical del 2/4",
   "type": "interactive",
   "cycle": "0",
