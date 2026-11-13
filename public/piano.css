@@ -216,21 +216,21 @@ header a:focus-visible, .piano-hero a:focus-visible { outline-color: var(--mix-y
 }
 .teacher-tools .app-crop-bingo {
   width: 84%;
-  aspect-ratio: 1410 / 680;
+  aspect-ratio: 920 / 416;
 }
 .teacher-tools .app-crop-bingo img {
-  width: 129.4%;
-  left: -12.1%;
-  top: -83.8%;
+  width: 139.13%;
+  left: -19.57%;
+  top: -32.21%;
 }
 .teacher-tools .app-crop-simon {
   width: 41%;
-  aspect-ratio: 610 / 604;
+  aspect-ratio: 1;
 }
 .teacher-tools .app-crop-simon img {
-  width: 216.4%;
-  left: -59.8%;
-  top: -38.6%;
+  width: 297.67%;
+  left: -98.84%;
+  top: -25.58%;
 }
 
 #herramientas.teacher-tools {

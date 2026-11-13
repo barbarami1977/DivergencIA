@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
+/* Shared visual identity from the DivergencIA website. */
+:root{--paper:#f7f5ef;--bg:#f7f5ef;--white:#fcfaf5;--ink:#252523;--muted:#5b5a54;--line:#d8d4c9;--coral:#79551b;--accent:#79551b;--green:#79551b;--lavender:#eeece5;--lavender-deep:#79551b;--gold:#ffdf79;--dg-panel:#eeece5;--dg-type:"Manrope","Avenir Next",system-ui,sans-serif;--dg-display:"Space Grotesk","Avenir Next",system-ui,sans-serif;--grain:none}
+html{background:var(--paper);color:var(--ink)}body{background:var(--paper);color:var(--ink);font-family:var(--dg-type);-webkit-font-smoothing:antialiased}button,input,select,textarea,.file{font-family:var(--dg-type)}h1,h2,h3,.sectiontitle h1,.sectiontitle h1 em,.finalanswers h2,.finalanswers h2 em{font-family:var(--dg-display);font-weight:700;color:var(--ink)}h1{letter-spacing:-.055em}h1 em,h2 em{font-family:inherit;font-style:normal;font-weight:inherit;color:var(--coral)}p,small,.muted{color:var(--muted)}.eyebrow,.step{color:var(--coral)}
+body>header{width:100%;max-width:none;margin:0;height:auto;min-height:96px;padding:20px max(5%,calc((100% - 1220px)/2));background:#222323;border-bottom:1px solid #ffffff24;display:flex;align-items:center;gap:28px;color:#faf7ef}
+body>header .dg-brand{display:grid;grid-template-columns:46px auto;align-items:center;gap:13px;color:#faf7ef;text-decoration:none;white-space:nowrap;font-family:var(--dg-display);font-weight:700;letter-spacing:-.055em;line-height:1.1;font-size:30px}
+body>header .dg-symbol{display:block;position:static;width:46px;height:46px;object-fit:contain;border-radius:50%;padding:0}
+body>header .dg-brand .dg-wordmark{display:block;padding:0;font:inherit;letter-spacing:inherit;color:#faf7ef}
+body>header .dg-brand .dg-wordmark b{font-weight:inherit;color:var(--gold)}
+body>header .dg-brand .dg-app{display:block;margin:7px 0 0;padding:0;color:#e4ded1;font:600 10px/1.2 var(--dg-type);letter-spacing:.07em}
+body>header .tag,body>header .beta,body>header #saveState,body>header>span{color:#e4ded1}
+body>header button{color:#faf7ef;border-color:#ffffff55;background:transparent}body>header button:hover{background:#ffffff12;color:var(--gold)}body>header nav button.active,body>header nav button[aria-pressed=true]{color:var(--gold)}body>header .nav.active:after{background:var(--gold)}body>header .nav span{color:#e4ded1}
+footer{border-color:var(--line);color:var(--muted);font-family:var(--dg-type)}footer a,footer .footerbrand{font-family:var(--dg-display);font-weight:700;color:var(--ink)}footer button{color:var(--muted)}
+@media screen{
+ button:not(.note):not(.play):not(.help):not(.helpbutton):not(.close):not(.drawerClose),.file,.fileLabel{border-radius:0}
+ .primary,.approve,button#analyze{background:var(--gold);color:var(--ink);border:1px solid #c6a84e;font-weight:700}
+ .primary:hover,.approve:hover,button#analyze:hover{background:#f5d56d;border-color:#a48a3e;color:var(--ink)}
+ .secondary,.outline,button#download{border-color:var(--line);color:var(--ink);background:var(--dg-panel)}
+ select,input[type=number],input[type=text],input:not([type]),textarea{color:var(--ink);background:var(--white);border-color:var(--line);border-radius:0}
+ input[type=range],input[type=checkbox],progress{accent-color:var(--coral)}
+ dialog,.panel,.card,.game,.room-panel,.room-entry form,.player-row,.student-audio,.room-qr{background:var(--white);border:1px solid var(--line);border-radius:0;box-shadow:none}
+ dialog::backdrop{background:#22232388;backdrop-filter:blur(3px)}
+ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,canvas:focus-visible,.fileLabel:focus-within{outline:3px solid var(--coral);outline-offset:4px}
+ body>header :focus-visible{outline-color:var(--gold)}
+}
+@media(max-width:700px){body>header{padding:17px 5%;min-height:84px;gap:15px;flex-wrap:wrap}body>header .dg-brand{font-size:26px;grid-template-columns:40px auto;gap:11px}body>header .dg-symbol{width:40px;height:40px}body>header .dg-brand .dg-app{font-size:9px;margin-top:6px}body>header #saveState{font-size:10px}body>header .headright{margin-left:auto}body>header .beta{display:none}}
+@media screen{
+.intro{padding:32px 0 26px;gap:30px}.intro h1{font:700 clamp(40px,6vw,66px)/1.02 var(--dg-display);letter-spacing:-.055em}.intro .lead{max-width:40ch}.class-note{background:var(--gold);border:0;border-left:3px solid #c6a84e;box-shadow:none;transform:none;padding:17px 20px}.class-note span{color:var(--coral)}.class-note p{font:600 14px/1.6 var(--dg-type);color:var(--ink)}.game,.room-panel{background:var(--white);border-radius:0;box-shadow:none;border-color:var(--line)}.modes,.game .modes{border-radius:0;background:var(--dg-panel)}.modes button[aria-pressed=true],.game .modes button[aria-pressed=true]{background:var(--gold);box-shadow:none}.play-tabs button{border-color:var(--line)}.play-tabs button[aria-pressed=true]{background:var(--ink);color:#faf7ef}.notes{background:#252523;box-shadow:0 0 0 5px #252523,0 0 0 7px var(--white);filter:none}.notes .note{background:var(--color)}.notes .note[data-note="0"]{--color:#ff5139}.notes .note[data-note="1"]{--color:#ffce24}.notes .note[data-note="2"]{--color:#35cb78}.notes .note[data-note="3"]{--color:#29b5f6}.notes .note[data-note="4"]{--color:#b478f2}.notes .note strong{font-family:var(--dg-display);color:#222323}.notes .note.lit,.notes .note:active:not(:disabled){background:color-mix(in srgb,var(--color),white 62%);filter:brightness(1.08)}.disc-center{background:var(--paper);color:var(--coral);box-shadow:0 0 0 5px #252523}.gamefoot{border-color:var(--line)}.how b{color:var(--coral)}.room-panel{background:var(--dg-panel)}.room-heading strong{font-family:var(--dg-display)}.room-entry input{border-radius:0}.student-audio input{accent-color:var(--coral)}
+}
+@media(max-width:650px){.intro{padding-top:26px}.intro h1{font-size:42px}.class-note{display:none}}
+
+body>header button.nav,body>header button.helpbutton,body>header button.help{color:#faf7ef}body>header button.nav.active{color:var(--gold)}body>header .headright .beta{color:#e4ded1}body>header button.helpbutton,body>header button.help{border-color:#ffffff55}body>header button.nav:hover{color:var(--gold)}
+
+/* Pointer input lights the segment without a rectangular focus outline. */
+.notes .note{-webkit-tap-highlight-color:transparent}
+.notes .note:focus{outline:none}
+.notes .note:focus-visible{outline:none}
+.notes .note:focus-visible strong{border-radius:50%;outline:3px solid currentColor;outline-offset:7px}

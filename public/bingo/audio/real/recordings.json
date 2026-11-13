@@ -1,0 +1,299 @@
+[
+  {
+    "id": "violin",
+    "file": "audio/real/violin.mp3",
+    "title": "Violin G major scale.ogg",
+    "author": "Mutatis mutandis",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Violin_G_major_scale.ogg"
+  },
+  {
+    "id": "flute",
+    "file": "audio/real/flute.mp3",
+    "title": "F-durskala.ogg",
+    "author": "CarinaT",
+    "license": "Dominio público",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:F-durskala.ogg"
+  },
+  {
+    "id": "clarinet",
+    "file": "audio/real/clarinet.mp3",
+    "title": "Clarinette chalumeau.ogg",
+    "author": "Vatekor",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Clarinette_chalumeau.ogg"
+  },
+  {
+    "id": "cello",
+    "file": "audio/real/cello.mp3",
+    "title": "Cello strings.ogg",
+    "author": "Georg Feitscher",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Cello_strings.ogg"
+  },
+  {
+    "id": "guitar-acoustic",
+    "file": "audio/real/guitar-acoustic.mp3",
+    "title": "La bamba chords cfg7.ogg",
+    "author": "Jules Grandgagnage",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:La_bamba_chords_cfg7.ogg"
+  },
+  {
+    "id": "piano",
+    "file": "audio/real/piano.mp3",
+    "title": "G Major - 10th 2-parts Invention, Bach.ogg",
+    "author": "Jason M. C., Han",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:G_Major_-_10th_2-parts_Invention%2C_Bach.ogg"
+  },
+  {
+    "id": "trumpet",
+    "file": "audio/real/trumpet.mp3",
+    "title": "Flaggenparade der deutschen Bundeswehr, Trompetensignal (Studio).ogg",
+    "author": "DrTrumpet",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Flaggenparade_der_deutschen_Bundeswehr%2C_Trompetensignal_%28Studio%29.ogg"
+  },
+  {
+    "id": "accordion",
+    "file": "audio/real/accordion.mp3",
+    "title": "Accordion chords-01.ogg",
+    "author": "Clngre",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Accordion_chords-01.ogg"
+  },
+  {
+    "id": "agogo",
+    "file": "audio/real/agogo.mp3",
+    "title": "Agogo.ogg",
+    "author": "Freddythehat at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Agogo.ogg"
+  },
+  {
+    "id": "snare",
+    "file": "audio/real/snare.mp3",
+    "title": "Audio de un redoblante Sarai.wav",
+    "author": "BATERIAS",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Audio_de_un_redoblante_Sarai.wav"
+  },
+  {
+    "id": "bassoon",
+    "file": "audio/real/bassoon.mp3",
+    "title": "Bassoon-technical-chromatic.ogg",
+    "author": "Kathleen (Kat) Walsh; grabación: Gregory Maxwell",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Bassoon-technical-chromatic.ogg"
+  },
+  {
+    "id": "saxophone",
+    "file": "audio/real/saxophone.mp3",
+    "title": "Chromatic.ogg",
+    "author": "Adwiii",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chromatic.ogg"
+  },
+  {
+    "id": "claves",
+    "file": "audio/real/claves.mp3",
+    "title": "Clave pattern.ogg",
+    "author": "Freddythehat at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Clave_pattern.ogg"
+  },
+  {
+    "id": "cymbals",
+    "file": "audio/real/cymbals.mp3",
+    "title": "Cymbal sounds.ogg",
+    "author": "aradlaw",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Cymbal_sounds.ogg"
+  },
+  {
+    "id": "djembe",
+    "file": "audio/real/djembe.mp3",
+    "title": "Djembe accompaniment.ogg",
+    "author": "Michi Henning",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Djembe_accompaniment.ogg"
+  },
+  {
+    "id": "harp",
+    "file": "audio/real/harp.mp3",
+    "title": "Gliss.ogg",
+    "author": "Daniel Musiklexikon",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Gliss.ogg"
+  },
+  {
+    "id": "guiro",
+    "file": "audio/real/guiro.mp3",
+    "title": "Guiro.ogg",
+    "author": "Freddythehat at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Guiro.ogg"
+  },
+  {
+    "id": "kalimba",
+    "file": "audio/real/kalimba-real-v2.mp3",
+    "title": "Kalimba-Melody-1-mono.wav",
+    "author": "Xrott",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://freesound.org/people/Xrott/sounds/544305/"
+  },
+  {
+    "id": "triangle",
+    "file": "audio/real/triangle.mp3",
+    "title": "LatinTriangle.ogg",
+    "author": "http://en.wikipedia.org/wiki/User:Freddythehat",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:LatinTriangle.ogg"
+  },
+  {
+    "id": "maracas",
+    "file": "audio/real/maracas.mp3",
+    "title": "Maracas.ogg",
+    "author": "Wikipedia-ce",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Maracas.ogg"
+  },
+  {
+    "id": "rainstick",
+    "file": "audio/real/rainstick.mp3",
+    "title": "Rainstick.ogg",
+    "author": "BambooBeast",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Rainstick.ogg"
+  },
+  {
+    "id": "recorder",
+    "file": "audio/real/recorder.mp3",
+    "title": "SopranoRecorder.ogg",
+    "author": "User:Thparkth",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:SopranoRecorder.ogg"
+  },
+  {
+    "id": "tambourine",
+    "file": "audio/real/tambourine.mp3",
+    "title": "Tambourine.ogg",
+    "author": "Freddythehat at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Tambourine.ogg"
+  },
+  {
+    "id": "castanets",
+    "file": "audio/real/castanets.mp3",
+    "title": "castanets dry.wav",
+    "author": "Satoration",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://freesound.org/people/Satoration/sounds/57299/"
+  },
+  {
+    "id": "piccolo",
+    "file": "audio/real/piccolo.mp3",
+    "title": "A5-E7 piccolo",
+    "author": "Maria_Mannone",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://freesound.org/people/Maria_Mannone/sounds/725760/"
+  },
+  {
+    "id": "oboe",
+    "file": "audio/real/oboe.mp3",
+    "title": "Oboe slow improvisation",
+    "author": "piermic",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "https://freesound.org/people/piermic/sounds/323041/"
+  },
+  {
+    "id": "horn",
+    "file": "audio/real/horn.mp3",
+    "title": "Horn call from Beethoven Symphony 3",
+    "author": "TaranP",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://freesound.org/people/TaranP/sounds/361688/"
+  },
+  {
+    "id": "viola",
+    "file": "audio/real/viola.mp3",
+    "title": "Viola sound (5)",
+    "author": "owstu",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "https://freesound.org/people/owstu/sounds/628823/"
+  },
+  {
+    "id": "doublebass",
+    "file": "audio/real/doublebass.mp3",
+    "title": "Double bass 1",
+    "author": "lostphosphene",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "https://freesound.org/people/lostphosphene/sounds/253965/"
+  },
+  {
+    "id": "tuba",
+    "file": "audio/real/tuba-real-v2.mp3",
+    "title": "Melo COND.wav · tuba interpretada por Samuel Naves",
+    "author": "josemdavid",
+    "license": "CC BY-NC 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "source": "https://freesound.org/people/josemdavid/sounds/406607/"
+  },
+  {
+    "id": "bassdrum",
+    "file": "audio/real/bassdrum.mp3",
+    "title": "Bass drum.ogg",
+    "author": "Clngre",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Bass_drum.ogg"
+  },
+  {
+    "id": "trombone",
+    "file": "audio/real/trombone.mp3",
+    "title": "Jazz Trombone.ogg",
+    "author": "Serolillo",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:Jazz_Trombone.ogg"
+  },
+  {
+    "id": "timpani",
+    "file": "audio/real/timpani.mp3",
+    "title": "Timpani F major triad.ogg",
+    "author": "Schrauber5",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Timpani_F_major_triad.ogg"
+  }
+]

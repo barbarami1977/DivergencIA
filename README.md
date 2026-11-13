@@ -30,3 +30,11 @@ La migración `0001_initial_counts.sql` conserva una instantánea de los contado
 ## Autorías
 
 Se conservan las firmas, licencias y créditos de los materiales. La copia del repositorio no concede licencias adicionales sobre sus contenidos. No se ha añadido una licencia general que sustituya las de cada recurso.
+
+## Aplicaciones integradas
+
+- `/bingo/`: Bingo MusicAI, con grabaciones e impresión de cartones.
+- `/simon/`: Simón MusicAl, con juego individual y Aula conectada.
+- `/api/simon/room`: salas temporales del modo aula en la misma base de datos D1; migración `0002_simon_rooms.sql`.
+
+Las aplicaciones y sus sonidos se sirven desde divergencia.org. Las partidas guardadas en los navegadores bajo los dominios anteriores de Netlify no se transfieren al nuevo dominio.
