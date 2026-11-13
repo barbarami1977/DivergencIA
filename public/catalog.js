@@ -1,4 +1,14 @@
 const resources=[
+{
+  "title": "Super Dobble · Superhéroes",
+  "type": "game",
+  "cycle": "0",
+  "description": "Encuentra el símbolo de superhéroe que comparten los dos círculos. Un juego por rondas para practicar la atención y la discriminación visual en primer ciclo.",
+  "url": "https://view.genially.com/606d82d08fe9930d77bd34b7",
+  "source": "Genially",
+  "preview": "previews/super-dobble.png",
+  "areas": []
+},
   {
     "title": "Programador de papel · Infantil",
     "type": "material",

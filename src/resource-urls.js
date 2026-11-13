@@ -1,4 +1,5 @@
 export default {
+"https://view.genially.com/606d82d08fe9930d77bd34b7": false,
   "pdfs/programador-papel-infantil.pdf": true,
   "pdfs/programador-papel.pdf": true,
   "pdfs/programacion-braille.pdf": true,
