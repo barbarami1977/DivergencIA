@@ -23,6 +23,9 @@ const duaConsiderations={
 '9.3':['engagement','Compromiso','9 · Autorregulación','Promover la reflexión individual y colectiva']
 };
 const duaMaterialTags={
+"https://view.genially.com/5ed8cba3dbbb930d03ea629f":[["2.1", "Las pistas relacionan definiciones con palabras y conceptos del vocabulario musical."], ["7.3", "El repaso del vocabulario se organiza como un juego de rosco de letras."]],
+"https://view.genially.com/6064c6f47e2ace0cd7da36b6":[["7.3", "La identificación de imágenes musicales se practica mediante un juego individual de búsqueda de coincidencias."], ["3.2", "Permite comparar ambas cartas y localizar la imagen musical que comparten pese a sus cambios de tamaño o posición."]],
+"https://view.genially.com/6061da9f1b42090cf71a55f2":[["7.3", "El reconocimiento visual de instrumentos se practica mediante un juego de búsqueda de coincidencias."], ["3.2", "Permite comparar las cartas y reconocer el instrumento común aunque cambie su tamaño o posición."]],
 "https://view.genially.com/608f0c2fd673050d1588675c":[["2.2", "El tamaño de las imágenes de palmas sirve como código visual para interpretar forte y piano."], ["3.2", "La comparación entre palmas grandes y pequeñas hace visible la relación entre tamaño e intensidad sonora."]],
 "https://view.genially.com/603bfe2ba6c8ee0d26fa225e":[["2.2", "Las figuras con forma de gato y los silencios actúan como código visual para interpretar la notación rítmica."], ["3.2", "Los espacios del compás de 2/4 hacen visible cómo se agrupan y relacionan las duraciones."], ["5.2", "Permite construir y reorganizar secuencias rítmicas utilizando piezas virtuales."]],
 "https://view.genially.com/61fab489ebaedb0014cc45b6":[["2.2", "Relaciona la representación visual de figuras y silencios musicales con sus nombres mediante preguntas de elección."], ["7.3", "La identificación de figuras y silencios se practica mediante un juego interactivo de preguntas."]],

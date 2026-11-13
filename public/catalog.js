@@ -1,5 +1,46 @@
 const resources=[
 {
+  "title": "Pasapalabra musical",
+  "type": "game",
+  "cycle": "1",
+  "description": "Resuelve las pistas del rosco para recordar y repasar vocabulario musical, instrumentos y conceptos de Música.",
+  "url": "https://view.genially.com/5ed8cba3dbbb930d03ea629f",
+  "source": "Genially",
+  "preview": "previews/pasapalabra-musical.png",
+  "pages": 53,
+  "areas": [
+    "musica"
+  ]
+},
+{
+  "title": "Dobble musical · Un jugador",
+  "type": "game",
+  "cycle": "1",
+  "description": "Encuentra la imagen musical que se repite en las dos cartas. Versión individual por rondas, con tiempo y vidas, que combina símbolos y objetos musicales.",
+  "url": "https://view.genially.com/6064c6f47e2ace0cd7da36b6",
+  "source": "Genially",
+  "preview": "previews/dobble-un-jugador.png",
+  "pages": 2,
+  "areas": [
+    "musica"
+  ],
+  "credit": "Plantilla de Sandbox Educación. Fondos de Pixabay."
+},
+{
+  "title": "Dobble musical · Instrumentos",
+  "type": "game",
+  "cycle": "1",
+  "description": "Compara las dos cartas y encuentra el instrumento que tienen en común. Un juego de atención y discriminación visual con instrumentos musicales.",
+  "url": "https://view.genially.com/6061da9f1b42090cf71a55f2",
+  "source": "Genially",
+  "preview": "previews/dobble-instrumentos.png",
+  "pages": 2,
+  "areas": [
+    "musica"
+  ],
+  "credit": "Plantilla de Sandbox Educación. Iconos de Freepik, de Flaticon."
+},
+{
   "title": "Intensidad musical · Forte y piano",
   "type": "interactive",
   "cycle": "0",
