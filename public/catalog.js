@@ -1,5 +1,31 @@
 const resources=[
 {
+  "title": "Tren musical del 2/4",
+  "type": "interactive",
+  "cycle": "0",
+  "description": "Manipulativo virtual para combinar figuras y silencios y completar los vagones de un tren en compás de 2/4.",
+  "url": "https://view.genially.com/60539f3a2b26120d800de240",
+  "source": "Genially",
+  "preview": "previews/tren-2-4.png",
+  "pages": 1,
+  "areas": [
+    "musica"
+  ]
+},
+{
+  "title": "Los compases · 2/4 y 3/4",
+  "type": "interactive",
+  "cycle": "0",
+  "description": "Manipulativo virtual para combinar figuras y silencios en los vagones de dos trenes y explorar los compases de 2/4 y 3/4.",
+  "url": "https://view.genially.com/6054badd5d00340dad3ec587",
+  "source": "Genially",
+  "preview": "previews/compases-2-4-3-4.png",
+  "pages": 1,
+  "areas": [
+    "musica"
+  ]
+},
+{
   "title": "Prelectura rítmica · Luna y sol",
   "type": "interactive",
   "cycle": "0",
