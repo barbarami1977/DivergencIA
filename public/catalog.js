@@ -1,5 +1,31 @@
 const resources=[
 {
+  "title": "Prelectura rítmica · Luna y sol",
+  "type": "interactive",
+  "cycle": "0",
+  "description": "Secuencias de prelectura rítmica con las palabras e imágenes de sol, luna y silencio para iniciarse en la interpretación musical.",
+  "url": "https://view.genially.com/6084414fbaf8e60d0a2201f3",
+  "source": "Genially",
+  "preview": "previews/prelectura-luna-sol.png",
+  "pages": 12,
+  "areas": [
+    "musica"
+  ]
+},
+{
+  "title": "Prelectura rítmica · Animales",
+  "type": "interactive",
+  "cycle": "0",
+  "description": "Secuencias de prelectura rítmica con apoyos visuales de animales y silencios para iniciarse en la interpretación musical.",
+  "url": "https://view.genially.com/60845926d127fd0d375f8b6c",
+  "source": "Genially",
+  "preview": "previews/prelectura-animales.png",
+  "pages": 12,
+  "areas": [
+    "musica"
+  ]
+},
+{
   "title": "Super Dobble · Superhéroes",
   "type": "game",
   "cycle": "0",
