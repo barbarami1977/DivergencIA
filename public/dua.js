@@ -23,7 +23,7 @@ const duaConsiderations={
 '9.3':['engagement','Compromiso','9 · Autorregulación','Promover la reflexión individual y colectiva']
 };
 const duaMaterialTags={
-"https://view.genially.com/606d82d08fe9930d77bd34b7":[["7.3","La búsqueda del símbolo común se propone como un juego visual de superhéroes por rondas."]],
+"https://view.genially.com/606d82d08fe9930d77bd34b7":[["7.3","La búsqueda del símbolo común se propone como un juego visual de superhéroes por rondas."],["3.2","Permite comparar los símbolos de ambas cartas e identificar el que comparten aunque cambie de tamaño o posición."]],
 "tool:bingo":[["7.3", "La identificación auditiva de instrumentos se practica mediante un juego de bingo."], ["8.2", "Las opciones para repetir el sonido y pedir ayuda permiten ajustar los apoyos durante la identificación."]],
 "tool:simon":[["1.2", "El modo Con luces combina la secuencia sonora con un apoyo visual; también permite trabajar solo de oído."], ["8.2", "Permite elegir el ritmo de presentación y utilizar o retirar las luces para ajustar el reto y los apoyos."], ["7.3", "La práctica de escucha y memoria musical se organiza como un juego de secuencias."]],
 "tool:celebraula":[["7.2", "Ayuda al docente a diseñar actividades vinculadas a efemérides y contextos reales. Su relevancia requiere conectarlas con los intereses y la experiencia del grupo."]],
