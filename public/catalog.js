@@ -1010,7 +1010,7 @@ const resources=[
 ];
 const typeNames={boardgame:'Juegos de mesa',material:'Materiales en PDF',app:'Apps y herramientas',game:'Juegos online',video:'Ritmogramas',score:'Partituras',evaluation:'Evaluación formativa',inclusion:'Comunicación y accesibilidad',interactive:'Interactivos'};
 const cycleNames={'0':'Primer ciclo · 1.º y 2.º','1':'Segundo ciclo · 3.º y 4.º','2':'Tercer ciclo · 5.º y 6.º',shared:'Primer, segundo y tercer ciclo',shared12:'Primer y segundo ciclo'};
-const sectionInfo={cycles:['Materiales por ciclos','Filtra por ciclo y área para encontrar una propuesta para tu aula.'],evaluation:['Evaluación formativa','Tickets, dianas y apoyos para revisar el aprendizaje, fuera de la organización por ciclos.'],routines:['Rutinas de pensamiento','Plantillas para explorar ideas, hacer visible el pensamiento y reflexionar.'],robotics:['Pensamiento computacional y robótica','Tableros y propuestas para planificar recorridos y conectar la programación con el aula.']};
+const sectionInfo={stations:['Estaciones de repaso y aprendizaje','Propuestas organizadas en estaciones para practicar, repasar y aprender mediante diferentes actividades y retos.'],cycles:['Materiales por ciclos','Filtra por ciclo y área para encontrar una propuesta para tu aula.'],evaluation:['Evaluación formativa','Tickets, dianas y apoyos para revisar el aprendizaje, fuera de la organización por ciclos.'],routines:['Rutinas de pensamiento','Plantillas para explorar ideas, hacer visible el pensamiento y reflexionar.'],robotics:['Pensamiento computacional y robótica','Tableros y propuestas para planificar recorridos y conectar la programación con el aula.']};
 const search=document.querySelector('#resource-search'),cycle=document.querySelector('#resource-cycle'),type=document.querySelector('#resource-type'),grid=document.querySelector('#resource-grid');
 const params=new URLSearchParams(location.search);
 let selectedArea=['musica','lengua','matematicas','plastica'].includes(params.get('area'))?params.get('area'):'all';
@@ -1056,6 +1056,7 @@ function render(){
  }
  document.querySelector('#resource-count').textContent=selected.length+' '+(selected.length===1?'recurso':'recursos');
  document.querySelector('#resource-empty').hidden=selected.length>0;
+ document.querySelector('#resource-empty').textContent=selectedSection==='stations'&&!query?'Próximamente encontrarás aquí las estaciones de repaso y aprendizaje.':'No hay recursos con estos filtros. Prueba con otro título, área o ciclo.';
 }
 [search,cycle,type].forEach(el=>el.addEventListener(el===search?'input':'change',render));
 for(const b of areaButtons)b.addEventListener('click',()=>{selectedArea=b.dataset.area;render();});
