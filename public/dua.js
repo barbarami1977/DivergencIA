@@ -23,6 +23,7 @@ const duaConsiderations={
 '9.3':['engagement','Compromiso','9 · Autorregulación','Promover la reflexión individual y colectiva']
 };
 const duaMaterialTags={
+"https://view.genially.com/5db183d142f1f60f5fc62402":[["7.3","La ruleta y las propuestas de baile invitan a participar en una dinámica lúdica de movimiento con música."]],
 "https://view.genially.com/5ed8cba3dbbb930d03ea629f":[["2.1", "Las pistas relacionan definiciones con palabras y conceptos del vocabulario musical."], ["7.3", "El repaso del vocabulario se organiza como un juego de rosco de letras."]],
 "https://view.genially.com/6064c6f47e2ace0cd7da36b6":[["7.3", "La identificación de imágenes musicales se practica mediante un juego individual de búsqueda de coincidencias."], ["3.2", "Permite comparar ambas cartas y localizar la imagen musical que comparten pese a sus cambios de tamaño o posición."]],
 "https://view.genially.com/6061da9f1b42090cf71a55f2":[["7.3", "El reconocimiento visual de instrumentos se practica mediante un juego de búsqueda de coincidencias."], ["3.2", "Permite comparar las cartas y reconocer el instrumento común aunque cambie su tamaño o posición."]],

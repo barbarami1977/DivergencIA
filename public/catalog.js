@@ -1,5 +1,23 @@
 const resources=[
 {
+  "title": "Dance Moves · Juego de baile",
+  "type": "game",
+  "cycle": "shared23",
+  "description": "Una ruleta musical para elegir canciones y poner en práctica sus movimientos de baile. Una propuesta para moverse y jugar con la música.",
+  "url": "https://view.genially.com/5db183d142f1f60f5fc62402",
+  "source": "Genially",
+  "preview": "previews/dance-moves.png",
+  "pages": 1,
+  "areas": [
+    "musica"
+  ],
+  "credit": "Plantilla de Sandbox Educación.",
+  "ai": {
+    "scope": "Fondo visual",
+    "explanation": "El fondo de la diapositiva se ha creado con inteligencia artificial. El juego, la selección musical y las propuestas de baile son de Bárbara Menéndez."
+  }
+},
+{
   "title": "Pasapalabra musical",
   "type": "game",
   "cycle": "1",
@@ -1009,7 +1027,7 @@ const resources=[
   }
 ];
 const typeNames={boardgame:'Juegos de mesa',material:'Materiales en PDF',app:'Apps y herramientas',game:'Juegos online',video:'Ritmogramas',score:'Partituras',evaluation:'Evaluación formativa',inclusion:'Comunicación y accesibilidad',interactive:'Interactivos'};
-const cycleNames={'0':'Primer ciclo · 1.º y 2.º','1':'Segundo ciclo · 3.º y 4.º','2':'Tercer ciclo · 5.º y 6.º',shared:'Primer, segundo y tercer ciclo',shared12:'Primer y segundo ciclo'};
+const cycleNames={'0':'Primer ciclo · 1.º y 2.º','1':'Segundo ciclo · 3.º y 4.º','2':'Tercer ciclo · 5.º y 6.º',shared:'Primer, segundo y tercer ciclo',shared12:'Primer y segundo ciclo',shared23:'Segundo y tercer ciclo'};
 const sectionInfo={stations:['Estaciones de repaso y aprendizaje','Propuestas organizadas en estaciones para practicar, repasar y aprender mediante diferentes actividades y retos.'],cycles:['Materiales por ciclos','Filtra por ciclo y área para encontrar una propuesta para tu aula.'],evaluation:['Evaluación formativa','Tickets, dianas y apoyos para revisar el aprendizaje, fuera de la organización por ciclos.'],routines:['Rutinas de pensamiento','Plantillas para explorar ideas, hacer visible el pensamiento y reflexionar.'],robotics:['Pensamiento computacional y robótica','Tableros y propuestas para planificar recorridos y conectar la programación con el aula.']};
 const search=document.querySelector('#resource-search'),cycle=document.querySelector('#resource-cycle'),type=document.querySelector('#resource-type'),grid=document.querySelector('#resource-grid');
 const params=new URLSearchParams(location.search);
@@ -1019,7 +1037,7 @@ const cycleIndex=['primero','segundo','tercero'].indexOf(params.get('ciclo'));
 if(cycleIndex!==-1)cycle.value=String(cycleIndex);
 const areaButtons=document.querySelectorAll('[data-area]'),sectionButtons=document.querySelectorAll('[data-section]');
 function normalize(s){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
-function matchesCycle(r,value){return value==='all'||r.cycle===value||(r.cycle==='shared'&&['0','1','2'].includes(value))||(r.cycle==='shared12'&&['0','1','shared'].includes(value))}
+function matchesCycle(r,value){return value==='all'||r.cycle===value||(r.cycle==='shared'&&['0','1','2'].includes(value))||(r.cycle==='shared12'&&['0','1','shared'].includes(value))||(r.cycle==='shared23'&&['1','2','shared'].includes(value))}
 function syncFilters(){
  const isCycle=selectedSection==='cycles';
  document.querySelector('#evaluation-guide').hidden=selectedSection!=='evaluation';
