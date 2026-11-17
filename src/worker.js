@@ -2,6 +2,8 @@ import resourceUrls from "./resource-urls.js";
 
 import { api as simonRoomAPI } from "./simon-rooms.js";
 
+import toolIds from "./tool-ids.js";
+
 const countPath = "/api/contadores";
 const noCache = { "Cache-Control": "no-store" };
 
@@ -38,7 +40,7 @@ export default {
     const data = await request.json().catch(() => null);
     const resource = data?.resource;
     const action = data?.action;
-    const valid = resource === "site"
+    const valid = resource === "site" || toolIds.includes(resource)
       ? action === "visit"
       : typeof resource === "string" && Object.hasOwn(resourceUrls, resource)
         && (action === "open" || (action === "download" && resourceUrls[resource]));
