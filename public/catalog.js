@@ -1,5 +1,21 @@
 const resources=[
 {
+  "title": "La criba de Eratóstenes",
+  "type": "interactive",
+  "cycle": "2",
+  "description": "Investiga en equipo los números primos hasta 100 mediante seis retos. Incluye pistas opcionales, guardado del progreso y un cuaderno de conclusiones descargable.",
+  "url": "/criba/",
+  "source": "App de divergencIA",
+  "preview": "previews/criba.png",
+  "areas": [
+    "matematicas"
+  ],
+  "ai": {
+    "scope": "Código y diseño",
+    "explanation": "Aplicación desarrollada con ayuda de inteligencia artificial y revisada por Bárbara Menéndez."
+  }
+},
+{
   "title": "Dance Moves · Juego de baile",
   "type": "game",
   "cycle": "shared23",
