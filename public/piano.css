@@ -409,8 +409,8 @@ header .brand .author {
 .classroom-hero{box-shadow:0 0 0 100vmax #222323;clip-path:inset(0 -100vmax)}
 
 /* Contexto de las identificaciones DUA */
-.catalog .dua-intro,#ciclos .dua-intro{max-width:850px;margin:0 0 28px}
-.catalog .dua-intro p,#ciclos .dua-intro p{margin:0 0 12px;line-height:1.65}
+.catalog .dua-intro,#ciclos .dua-intro{width:100%;max-width:none;margin:0 0 28px}
+.catalog .dua-intro p,#ciclos .dua-intro p{width:100%;max-width:none;margin:0 0 12px;line-height:1.65;-webkit-hyphens:none;hyphens:none;overflow-wrap:normal}
 
 .cycle-shortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0}.cycle-shortcuts a{display:flex;flex-direction:column;gap:8px;padding:22px;background:#eeece5;border:1px solid #d8d6cf;border-radius:12px;color:#252626;text-decoration:none;font-weight:700}.cycle-shortcuts a span{font-size:14px;font-weight:400}.cycle-shortcuts a:hover{background:#ffdf79}@media(max-width:600px){.cycle-shortcuts{grid-template-columns:1fr}}
 
