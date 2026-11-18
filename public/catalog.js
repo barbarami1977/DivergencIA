@@ -1085,7 +1085,7 @@ function render(){
   if(r.credit){const credit=document.createElement('p');credit.className='credit';credit.textContent=r.credit;card.append(credit);}
   const actions=document.createElement('div');actions.className='resource-actions';
   const link=document.createElement('a');link.href=r.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=r.source==='PDF'?'Ver PDF ↗':'Abrir interactivo ↗';link.setAttribute('aria-label',link.textContent+' · '+r.title);actions.append(link);
-  if(r.source==='PDF'){const download=document.createElement('a');download.href=r.url;download.download=r.url.split('/').pop();download.textContent='Descargar ↓';download.setAttribute('aria-label','Descargar PDF · '+r.title);download.className='download';actions.append(download);}
+  if(r.source==='PDF'){const download=document.createElement('a');download.href=r.url;download.download=r.url.split('/').pop();download.textContent='Descargar';download.setAttribute('aria-label','Descargar PDF · '+r.title);download.className='download';actions.append(download);}
   card.append(actions);grid.append(card);
  }
  document.querySelector('#resource-count').textContent=selected.length+' '+(selected.length===1?'recurso':'recursos');
