@@ -4,7 +4,7 @@
   const format = new Intl.NumberFormat('es');
   const app = document.querySelector('[data-app-visits]');
   const links = [...document.querySelectorAll('a[href*="gemini.google.com/gem/"]')];
-  const key = link => 'gem:' + new URL(link.href).pathname.split('/').pop();
+  const key = link => 'gem:' + new URL(link.getAttribute('href'), location.href).pathname.split('/').pop();
   const labels = new Map();
   for (const link of links) {
     // SVG map regions share their total with the accessible text links below.
@@ -48,9 +48,12 @@
     const link = event.target.closest('a[href*="gemini.google.com/gem/"]');
     if (link) increment(key(link));
   });
-  fetch(endpoint, {cache:'no-store'}).then(r => r.ok ? r.json() : Promise.reject()).then(rows => {
+  function refreshCounts() { return fetch(endpoint, {cache:'no-store'}).then(r => r.ok ? r.json() : Promise.reject()).then(rows => {
     for (const row of rows) if (row.action === 'visit') totals.set(row.resource, Math.max(totals.get(row.resource) || 0, row.total));
     render();
-  }).catch(() => {});
+  }).catch(() => {}); }
+  refreshCounts();
+  window.addEventListener('pageshow', event => { if (event.persisted) refreshCounts(); });
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') refreshCounts(); });
   if (app) increment(app.dataset.appVisits);
 })();
