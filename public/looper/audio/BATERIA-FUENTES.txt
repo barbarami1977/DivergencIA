@@ -1,0 +1,7 @@
+kick.wav — Membranophones/Struck Membranophones/Bass Drum 1/BDrumNew_hit_v3_rr1_Sum.wav
+snare.wav — Membranophones/Struck Membranophones/Snare Drum, Modern 1/Snare2_HitSN_v3_rr1_Mid.wav
+hat.wav — Idiophones/Struck Idiophones/Hi-Hat Cymbal/HiHat_HitC_v3_rr1_Mid.wav
+crash.wav — Idiophones/Struck Idiophones/Suspended Cymbal 1/susCymb1_hit_f1.wav
+VCSL, Versilian Studios y colaboradores. CC0 1.0.
+https://github.com/sgossner/VCSL
+Se recortan el ataque y la cola y se ajusta el volumen para su uso como muestras.

@@ -11,7 +11,7 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     if (url.pathname === "/api/simon/room") return simonRoomAPI(request, env);
-    if (["/bingo", "/simon"].includes(url.pathname)) return Response.redirect(url.origin + url.pathname + "/" + url.search, 308);
+    if (["/bingo", "/simon", "/looper"].includes(url.pathname)) return Response.redirect(url.origin + url.pathname + "/" + url.search, 308);
     if (url.pathname !== countPath) {
       const response = await env.ASSETS.fetch(request);
       if (response.headers.get("Content-Type")?.includes("text/html")) {
@@ -54,3 +54,4 @@ export default {
     return Response.json(result, { headers: noCache });
   }
 };
+

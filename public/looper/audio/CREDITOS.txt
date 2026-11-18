@@ -1,0 +1,26 @@
+LOOPER MusicAl · DivergencIA
+
+GRABACIONES REALES
+Pandero (tambor de marco): VCSL, HDrumS_Hit_v2_rr1_Sum.wav
+https://github.com/sgossner/VCSL/blob/master/Membranophones/Struck%20Membranophones/Frame%20Drum/HDrumS_Hit_v2_rr1_Sum.wav
+Claves: VCSL, Claves1_Hit_v3_rr1_Mid.wav
+Triángulo: VCSL, Triangle1_Hit_v2_rr1_Mid.wav
+Biblioteca VCSL, Versilian Studios y colaboradores. CC0 1.0.
+https://github.com/sgossner/VCSL
+Se incluye la licencia completa en VCSL-LICENSE.txt y créditos de la colección en VCSL-README.md.
+Procesamiento: recorte al ataque, ajuste de volumen y fundidos breves.
+
+Maracas: Wikipedia-ce, Maracas.ogg. Dominio público.
+https://commons.wikimedia.org/wiki/File:Maracas.ogg
+https://creativecommons.org/publicdomain/mark/1.0/
+Fragmento de una grabación continua; recorte al primer ataque y ajuste de volumen.
+
+Piano: Salamander Grand Piano, Alexander Holm, C4.
+Distribución MP3 Tone.js: https://tonejs.github.io/audio/salamander/C4.mp3
+CC BY 3.0: https://creativecommons.org/licenses/by/3.0/
+Se usa la muestra para interpretar patrones a distintas alturas.
+
+SONIDOS Y PATRONES PROPIOS
+El sintetizador melódico se genera en el dispositivo. La batería utiliza grabaciones reales CC0 de VCSL; archivos exactos y fuentes en BATERIA-FUENTES.txt.
+Los patrones preparados son arreglos originales creados para esta app. No se incluyen canciones comerciales.
+La mezcla y los proyectos descargados pueden contener estas muestras y sus derivados; conservar estos créditos al redistribuir.
