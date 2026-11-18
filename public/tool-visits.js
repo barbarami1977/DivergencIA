@@ -8,7 +8,7 @@
   const labels = new Map();
   for (const link of links) {
     // SVG map regions share their total with the accessible text links below.
-    if (link.namespaceURI !== 'http://www.w3.org/1999/xhtml') continue;
+    if (link.namespaceURI !== 'http://www.w3.org/1999/xhtml' || !link.closest('.sem-links, .teacher-tool')) continue;
     const label = document.createElement('small');
     label.className = 'tool-visit-count';
     label.style.cssText = 'display:block;font-size:.8rem;line-height:1.5;margin-top:.5rem;opacity:.8';
