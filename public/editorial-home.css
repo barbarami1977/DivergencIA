@@ -29,3 +29,5 @@
 .editorial-home #herramientas .gem-cover{width:100%;min-width:0;box-sizing:border-box;overflow:hidden}
 /* Cabecera oscura, conservando la composición editorial. */
 .editorial-home>header{background:#222323;border-bottom-color:#ffffff24;max-width:none;padding-left:max(5%,calc((100% - 1320px)/2));padding-right:max(5%,calc((100% - 1320px)/2))}.editorial-home>header .brand,.editorial-home>header nav a{color:#f7f5ef}.editorial-home>header .brand>.author{color:#f7f5ef!important}.editorial-home>header .brand>span:not(.author){color:#ffdf79}.editorial-home>header nav a:hover{color:#ffdf79}
+/* Trazo de subrayador: contorno y opacidad irregulares, sin imagen añadida. */
+.editorial-home .title-marker:after{left:-.035em;right:-.045em;bottom:-.025em;height:.18em;border-radius:0;background:linear-gradient(176deg,#ffdf79ba 0%,#ffdf79ef 48%,#ffdf79c9 100%);clip-path:polygon(0 28%,2% 17%,6% 24%,13% 14%,21% 20%,30% 12%,40% 18%,50% 10%,61% 18%,72% 13%,82% 21%,93% 15%,99% 27%,100% 74%,97% 84%,88% 77%,78% 90%,68% 81%,56% 91%,45% 82%,33% 92%,22% 84%,12% 94%,4% 83%,0 87%);transform:rotate(-.8deg)}
