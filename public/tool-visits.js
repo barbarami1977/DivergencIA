@@ -23,10 +23,10 @@
     if (semLabel) {
       let total = 0;
       for (const [id, value] of totals) if (id.startsWith('gem:') && id !== 'gem:1Nse4MPiRWWtEjfV0JMWj1QrLvTDeeSiW') total += value;
-      semLabel.textContent = `Aperturas de sus versiones: ${format.format(total)}`;
+      semLabel.textContent = `Aperturas: ${format.format(total)}`;
     }
     for (const [label, id] of labels) {
-      label.textContent = `Aperturas desde esta web: ${format.format(totals.get(id) || 0)}`;
+      label.textContent = `Aperturas: ${format.format(totals.get(id) || 0)}`;
       label.hidden = false;
     }
     if (app && totals.has(app.dataset.appVisits)) {
