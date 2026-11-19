@@ -422,3 +422,6 @@ header .brand .author {
 /* Let the teacher-tools introduction span the section instead of a card width. */
 #herramientas > .tools-intro { width:100%; min-width:0; }
 #herramientas > .tools-intro p { max-width:none; width:100%; -webkit-hyphens:none; hyphens:none; overflow-wrap:normal; }
+
+/* Los enlaces conservan su respuesta de color y el foco, sin subrayado al pasar el ratón. */
+body a:hover{text-decoration:none!important}
