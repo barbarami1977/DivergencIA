@@ -1,0 +1,4 @@
+/* Navigation without a mouse, including the standalone apps. */
+.skip-content{position:fixed;left:16px;top:12px;transform:translateY(-200%);z-index:10000;background:#ffdf79;color:#222323;padding:14px 20px;font:700 1rem/1.4 system-ui,sans-serif;text-decoration:none}
+.skip-content:focus{transform:none;outline:3px solid #222323;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
