@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "db:migrate": "wrangler d1 migrations apply divergencia-contadores --remote"
+    "db:migrate": "wrangler d1 migrations apply divergencia-contadores --remote",
+    "sitemap": "node scripts/generate-sitemap.mjs"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"

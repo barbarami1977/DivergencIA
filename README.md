@@ -38,3 +38,8 @@ Se conservan las firmas, licencias y créditos de los materiales. La copia del r
 - `/api/simon/room`: salas temporales del modo aula en la misma base de datos D1; migración `0002_simon_rooms.sql`.
 
 Las aplicaciones y sus sonidos se sirven desde divergencia.org. Las partidas guardadas en los navegadores bajo los dominios anteriores de Netlify no se transfieren al nuevo dominio.
+
+
+### Google y mapa del sitio
+
+Antes de publicar cambios en el catálogo o sus PDF, ejecutar `npm run sitemap` para actualizar `public/sitemap.xml`. Se incluyen las páginas canónicas y solo los PDF enlazados en el catálogo. Las correcciones de PDF deben conservar sus rutas cuando sea posible. La etiqueta `google-site-verification` de la portada mantiene la propiedad de Search Console: no eliminarla.
