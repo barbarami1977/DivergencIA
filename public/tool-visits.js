@@ -3,8 +3,8 @@
   const totals = new Map();
   const format = new Intl.NumberFormat('es');
   const app = document.querySelector('[data-app-visits]');
-  const links = [...document.querySelectorAll('a[href*="gemini.google.com/gem/"]')];
-  const key = link => 'gem:' + new URL(link.getAttribute('href'), location.href).pathname.split('/').pop();
+  const links = [...document.querySelectorAll('a[href*="gemini.google.com/gem/"], a[data-tool-visit]')];
+  const key = link => link.dataset.toolVisit || 'gem:' + new URL(link.getAttribute('href'), location.href).pathname.split('/').pop();
   const labels = new Map();
   for (const link of links) {
     // SVG map regions share their total with the accessible text links below.
@@ -45,7 +45,7 @@
   }
   for (const type of ['click', 'auxclick']) document.addEventListener(type, event => {
     if (type === 'auxclick' && event.button !== 1) return;
-    const link = event.target.closest('a[href*="gemini.google.com/gem/"]');
+    const link = event.target.closest('a[href*="gemini.google.com/gem/"], a[data-tool-visit]');
     if (link) increment(key(link));
   });
   function refreshCounts() { return fetch(endpoint, {cache:'no-store'}).then(r => r.ok ? r.json() : Promise.reject()).then(rows => {
