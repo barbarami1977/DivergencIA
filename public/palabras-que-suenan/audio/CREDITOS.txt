@@ -1,0 +1,5 @@
+Piano: Salamander Grand Piano, Alexander Holm. Licencia Creative Commons Attribution 3.0.
+Muestra C4: https://tonejs.github.io/audio/salamander/C4.mp3
+Licencia: https://creativecommons.org/licenses/by/3.0/
+Se cambia la velocidad de reproducción para obtener do, re, mi, sol y la.
+Ilustraciones de frutas: vectores originales para esta aplicación.

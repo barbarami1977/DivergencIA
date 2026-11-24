@@ -58,4 +58,6 @@
 @media(max-width:760px){.editorial-home .tutorial-layout{grid-template-columns:1fr;gap:24px}.editorial-home .tutorial-visual{width:min(100%,290px)}}
 
 .editorial-home .palabras-art{overflow:hidden;position:relative;background:#f7f5ef}
-.editorial-home .palabras-art>img{width:100%;height:100%;object-fit:cover;object-position:center 79%}
+.editorial-home .palabras-art>img{width:100%;height:100%;object-fit:cover;object-position:center top}
+
+.editorial-home .palabras-art>img{object-fit:contain;object-position:center top;background:#f7f5ef}

@@ -1,7 +1,7 @@
 import {readFile, writeFile, readdir} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 const root = fileURLToPath(new URL('../public/', import.meta.url));
-const pages = ['index.html','materiales.html','sobre-mi.html','figuras-femeninas.html','ritmogramas.html','bingo/index.html','simon/index.html','looper/index.html','criba/index.html'];
+const pages = ['index.html','materiales.html','sobre-mi.html','figuras-femeninas.html','ritmogramas.html','bingo/index.html','simon/index.html','looper/index.html','criba/index.html','palabras-que-suenan/index.html'];
 const urls = new Set();
 for (const page of pages) {
   const html = await readFile(root + page, 'utf8');
