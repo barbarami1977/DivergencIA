@@ -10,6 +10,10 @@ const noCache = { "Cache-Control": "no-store" };
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.protocol === "http:" && ["divergencia.org", "www.divergencia.org"].includes(url.hostname)) {
+      url.protocol = "https:";
+      return Response.redirect(url.toString(), 308);
+    }
     if (url.pathname === "/api/simon/room") return simonRoomAPI(request, env);
     if (["/bingo", "/simon", "/looper", "/palabras-que-suenan"].includes(url.pathname)) return Response.redirect(url.origin + url.pathname + "/" + url.search, 308);
     if (url.pathname !== countPath) {
